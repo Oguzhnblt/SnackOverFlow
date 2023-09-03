@@ -18,6 +18,17 @@
 		12F340642AA496B100EE150F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340632AA496B100EE150F /* Colors.swift */; };
 		12F340662AA4975600EE150F /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340652AA4975600EE150F /* Icons.swift */; };
 		12F340692AA49EA100EE150F /* FacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340682AA49EA100EE150F /* FacebookButton.swift */; };
+		12F3406D2AA4A62C00EE150F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12F3406C2AA4A62C00EE150F /* Localizable.strings */; };
+		12F3406F2AA4A7A900EE150F /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F3406E2AA4A7A900EE150F /* LocalKeys.swift */; };
+		12F340712AA4A95B00EE150F /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340702AA4A95B00EE150F /* GoogleButton.swift */; };
+		12F340732AA4AA4D00EE150F /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340722AA4AA4D00EE150F /* EdgeInsets.swift */; };
+		12F340752AA4AA6E00EE150F /* PagePaddings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340742AA4AA6E00EE150F /* PagePaddings.swift */; };
+		12F340772AA4ABBD00EE150F /* Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340762AA4ABBD00EE150F /* Radius.swift */; };
+		12F340792AA4ACCE00EE150F /* AppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340782AA4ACCE00EE150F /* AppleButton.swift */; };
+		12F3407C2AA4AF3000EE150F /* ViewSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F3407B2AA4AF3000EE150F /* ViewSize.swift */; };
+		12F3407E2AA4AFF800EE150F /* EmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F3407D2AA4AFF800EE150F /* EmailButton.swift */; };
+		12F340812AA4B17000EE150F /* FontSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340802AA4B17000EE150F /* FontSizes.swift */; };
+		12F340832AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340822AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +44,17 @@
 		12F340632AA496B100EE150F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		12F340652AA4975600EE150F /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		12F340682AA49EA100EE150F /* FacebookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookButton.swift; sourceTree = "<group>"; };
+		12F3406C2AA4A62C00EE150F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		12F3406E2AA4A7A900EE150F /* LocalKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalKeys.swift; sourceTree = "<group>"; };
+		12F340702AA4A95B00EE150F /* GoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButton.swift; sourceTree = "<group>"; };
+		12F340722AA4AA4D00EE150F /* EdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		12F340742AA4AA6E00EE150F /* PagePaddings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagePaddings.swift; sourceTree = "<group>"; };
+		12F340762AA4ABBD00EE150F /* Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radius.swift; sourceTree = "<group>"; };
+		12F340782AA4ACCE00EE150F /* AppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleButton.swift; sourceTree = "<group>"; };
+		12F3407B2AA4AF3000EE150F /* ViewSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSize.swift; sourceTree = "<group>"; };
+		12F3407D2AA4AFF800EE150F /* EmailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailButton.swift; sourceTree = "<group>"; };
+		12F340802AA4B17000EE150F /* FontSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizes.swift; sourceTree = "<group>"; };
+		12F340822AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DynamicSize+GeometryProxy.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +109,8 @@
 		12F340532AA48DD200EE150F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				12F3407F2AA4B16300EE150F /* Fonts */,
+				12F3406B2AA4A61300EE150F /* Locale */,
 				12F340622AA496A300EE150F /* Extension */,
 				12F3405F2AA4926700EE150F /* Enums */,
 			);
@@ -138,8 +162,11 @@
 		12F3405F2AA4926700EE150F /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				12F3407A2AA4AF0C00EE150F /* Size */,
 				12F340602AA4928000EE150F /* Images.swift */,
 				12F340652AA4975600EE150F /* Icons.swift */,
+				12F340742AA4AA6E00EE150F /* PagePaddings.swift */,
+				12F340762AA4ABBD00EE150F /* Radius.swift */,
 			);
 			name = Enums;
 			sourceTree = "<group>";
@@ -148,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				12F340632AA496B100EE150F /* Colors.swift */,
+				12F340722AA4AA4D00EE150F /* EdgeInsets.swift */,
+				12F340822AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -164,8 +193,36 @@
 			isa = PBXGroup;
 			children = (
 				12F340682AA49EA100EE150F /* FacebookButton.swift */,
+				12F340702AA4A95B00EE150F /* GoogleButton.swift */,
+				12F340782AA4ACCE00EE150F /* AppleButton.swift */,
+				12F3407D2AA4AFF800EE150F /* EmailButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		12F3406B2AA4A61300EE150F /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				12F3406C2AA4A62C00EE150F /* Localizable.strings */,
+				12F3406E2AA4A7A900EE150F /* LocalKeys.swift */,
+			);
+			name = Locale;
+			sourceTree = "<group>";
+		};
+		12F3407A2AA4AF0C00EE150F /* Size */ = {
+			isa = PBXGroup;
+			children = (
+				12F3407B2AA4AF3000EE150F /* ViewSize.swift */,
+			);
+			name = Size;
+			sourceTree = "<group>";
+		};
+		12F3407F2AA4B16300EE150F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				12F340802AA4B17000EE150F /* FontSizes.swift */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F3406D2AA4A62C00EE150F /* Localizable.strings in Resources */,
 				12F3405C2AA4906200EE150F /* Colors.xcassets in Resources */,
 				12F3405E2AA4906E00EE150F /* Images.xcassets in Resources */,
 				12F3404D2AA48D3E00EE150F /* Preview Assets.xcassets in Resources */,
@@ -240,13 +298,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F340832AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift in Sources */,
 				12F340482AA48D3E00EE150F /* ContentView.swift in Sources */,
+				12F340792AA4ACCE00EE150F /* AppleButton.swift in Sources */,
+				12F3406F2AA4A7A900EE150F /* LocalKeys.swift in Sources */,
+				12F340732AA4AA4D00EE150F /* EdgeInsets.swift in Sources */,
 				12F340642AA496B100EE150F /* Colors.swift in Sources */,
+				12F3407C2AA4AF3000EE150F /* ViewSize.swift in Sources */,
 				12F340662AA4975600EE150F /* Icons.swift in Sources */,
+				12F340712AA4A95B00EE150F /* GoogleButton.swift in Sources */,
 				12F340692AA49EA100EE150F /* FacebookButton.swift in Sources */,
+				12F340752AA4AA6E00EE150F /* PagePaddings.swift in Sources */,
+				12F3407E2AA4AFF800EE150F /* EmailButton.swift in Sources */,
+				12F340812AA4B17000EE150F /* FontSizes.swift in Sources */,
 				12F340612AA4928000EE150F /* Images.swift in Sources */,
 				12F3405A2AA48EC300EE150F /* WelcomeView.swift in Sources */,
 				12F340462AA48D3E00EE150F /* SnackOverFlowApp.swift in Sources */,
+				12F340772AA4ABBD00EE150F /* Radius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

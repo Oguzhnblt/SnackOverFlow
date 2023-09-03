@@ -13,11 +13,7 @@ struct WelcomeView: View {
             Image(Images.juice.rawValue)
                 .resizable()
             Color.black_30 // with opacity color (0.3 -> 30)
-            VStack {
-                Image(IconItems.Social.appLogo.rawValue)
-                FacebookButton(onTap: {}).padding(Edge.Set.top, 40)
-            }
-            .padding(.paddingAll)
+            BodyView()
         }
     }
 }
@@ -28,7 +24,25 @@ struct WelcomeView_Previews: PreviewProvider {
     }
 }
 
-extension EdgeInsets {
-    
-    static let paddingAll = EdgeInsets.init(top: 10, leading: 10, bottom: 10, trailing: 10)
+private struct BodyView: View {
+    var body: some View {
+        GeometryReader { geometry in
+            VStack {
+                Spacer()
+                Image(IconItems.Social.appLogo.rawValue)
+                Spacer()
+                FacebookButton(onTap: {}).padding(Edge.Set.top, PagePadding.All.normal.rawValue)
+                GoogleButton(onTap: {})
+                AppleButton(onTap: {})
+                Divider()
+                    .background(Color.peach)
+                    .frame(width: geometry.dynamicWidth(width: 0.6),height: ViewSize.DividerSize.normal)
+                    .padding(.all, PagePadding.All.normal.rawValue)
+                EmailButton(onTap: {})
+                Spacer().frame(height: geometry.dynamicHeight(height: 0.1))
+            }
+            .padding(.paddingAll)
+        }
+    }
 }
+
