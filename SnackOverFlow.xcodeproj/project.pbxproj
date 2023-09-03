@@ -12,6 +12,12 @@
 		12F3404A2AA48D3E00EE150F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F340492AA48D3E00EE150F /* Assets.xcassets */; };
 		12F3404D2AA48D3E00EE150F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F3404C2AA48D3E00EE150F /* Preview Assets.xcassets */; };
 		12F3405A2AA48EC300EE150F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340592AA48EC300EE150F /* WelcomeView.swift */; };
+		12F3405C2AA4906200EE150F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F3405B2AA4906200EE150F /* Colors.xcassets */; };
+		12F3405E2AA4906E00EE150F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F3405D2AA4906E00EE150F /* Images.xcassets */; };
+		12F340612AA4928000EE150F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340602AA4928000EE150F /* Images.swift */; };
+		12F340642AA496B100EE150F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340632AA496B100EE150F /* Colors.swift */; };
+		12F340662AA4975600EE150F /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340652AA4975600EE150F /* Icons.swift */; };
+		12F340692AA49EA100EE150F /* FacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340682AA49EA100EE150F /* FacebookButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		12F340492AA48D3E00EE150F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12F3404C2AA48D3E00EE150F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12F340592AA48EC300EE150F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		12F3405B2AA4906200EE150F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		12F3405D2AA4906E00EE150F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		12F340602AA4928000EE150F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		12F340632AA496B100EE150F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		12F340652AA4975600EE150F /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		12F340682AA49EA100EE150F /* FacebookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +71,6 @@
 				12F340532AA48DD200EE150F /* Utils */,
 				12F340452AA48D3E00EE150F /* SnackOverFlowApp.swift */,
 				12F340472AA48D3E00EE150F /* ContentView.swift */,
-				12F340492AA48D3E00EE150F /* Assets.xcassets */,
 				12F3404B2AA48D3E00EE150F /* Preview Content */,
 			);
 			path = SnackOverFlow;
@@ -76,6 +87,8 @@
 		12F340532AA48DD200EE150F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				12F340622AA496A300EE150F /* Extension */,
+				12F3405F2AA4926700EE150F /* Enums */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -83,6 +96,9 @@
 		12F340542AA48DE300EE150F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				12F340492AA48D3E00EE150F /* Assets.xcassets */,
+				12F3405B2AA4906200EE150F /* Colors.xcassets */,
+				12F3405D2AA4906E00EE150F /* Images.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -106,6 +122,7 @@
 		12F340572AA48E2200EE150F /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				12F340672AA49E8300EE150F /* Widget */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -116,6 +133,39 @@
 				12F340592AA48EC300EE150F /* WelcomeView.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		12F3405F2AA4926700EE150F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				12F340602AA4928000EE150F /* Images.swift */,
+				12F340652AA4975600EE150F /* Icons.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		12F340622AA496A300EE150F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				12F340632AA496B100EE150F /* Colors.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		12F340672AA49E8300EE150F /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				12F3406A2AA49F6800EE150F /* Button */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		12F3406A2AA49F6800EE150F /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				12F340682AA49EA100EE150F /* FacebookButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +226,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F3405C2AA4906200EE150F /* Colors.xcassets in Resources */,
+				12F3405E2AA4906E00EE150F /* Images.xcassets in Resources */,
 				12F3404D2AA48D3E00EE150F /* Preview Assets.xcassets in Resources */,
 				12F3404A2AA48D3E00EE150F /* Assets.xcassets in Resources */,
 			);
@@ -189,6 +241,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F340482AA48D3E00EE150F /* ContentView.swift in Sources */,
+				12F340642AA496B100EE150F /* Colors.swift in Sources */,
+				12F340662AA4975600EE150F /* Icons.swift in Sources */,
+				12F340692AA49EA100EE150F /* FacebookButton.swift in Sources */,
+				12F340612AA4928000EE150F /* Images.swift in Sources */,
 				12F3405A2AA48EC300EE150F /* WelcomeView.swift in Sources */,
 				12F340462AA48D3E00EE150F /* SnackOverFlowApp.swift in Sources */,
 			);
