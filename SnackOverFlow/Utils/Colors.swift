@@ -12,6 +12,7 @@ extension Color {
    public static var deepSkyBlue: Color {Color("deepSkyBlue")}
    public static var black_30: Color {Color("black30")}
    public static var peach: Color {Color("peach")}
+   public static var clooney: Color {Color("clooney")}
 
     
 }

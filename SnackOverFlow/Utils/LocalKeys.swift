@@ -16,6 +16,10 @@ struct LocalKeys {
         case apple = "signInApple"
         case custom = "signupWithEmail"
     }
+    
+    enum Button: String {
+        case getStarted = "getStarted"
+    }
 }
 
 extension String {

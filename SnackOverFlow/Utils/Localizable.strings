@@ -9,3 +9,7 @@
 "signInGoogle"="Sign In with Google";
 "signInApple"="Sign In with Apple";
 "signupWithEmail"="Sign Up with Email";
+
+// Button
+
+"getStarted"="Get Started";

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126BFDD82AA4D838009B9EEF /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDD72AA4D838009B9EEF /* OnboardView.swift */; };
+		126BFDDA2AA4D9BC009B9EEF /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDD92AA4D9BC009B9EEF /* NormalButton.swift */; };
+		126BFDDC2AA4E609009B9EEF /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDDB2AA4E609009B9EEF /* OnboardModel.swift */; };
+		126BFDDE2AA4EA47009B9EEF /* ViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDDD2AA4EA47009B9EEF /* ViewHeight.swift */; };
 		12F340462AA48D3E00EE150F /* SnackOverFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340452AA48D3E00EE150F /* SnackOverFlowApp.swift */; };
 		12F340482AA48D3E00EE150F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340472AA48D3E00EE150F /* ContentView.swift */; };
 		12F3404A2AA48D3E00EE150F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F340492AA48D3E00EE150F /* Assets.xcassets */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		126BFDD72AA4D838009B9EEF /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		126BFDD92AA4D9BC009B9EEF /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
+		126BFDDB2AA4E609009B9EEF /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
+		126BFDDD2AA4EA47009B9EEF /* ViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeight.swift; sourceTree = "<group>"; };
 		12F340422AA48D3E00EE150F /* SnackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F340452AA48D3E00EE150F /* SnackOverFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackOverFlowApp.swift; sourceTree = "<group>"; };
 		12F340472AA48D3E00EE150F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126BFDD62AA4D825009B9EEF /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				126BFDD72AA4D838009B9EEF /* OnboardView.swift */,
+				126BFDDB2AA4E609009B9EEF /* OnboardModel.swift */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
 		12F340392AA48D3D00EE150F = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +155,7 @@
 		12F340562AA48E1400EE150F /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				126BFDD62AA4D825009B9EEF /* Onboard */,
 				12F340582AA48E4300EE150F /* Welcome */,
 			);
 			path = Authentication;
@@ -196,6 +214,7 @@
 				12F340702AA4A95B00EE150F /* GoogleButton.swift */,
 				12F340782AA4ACCE00EE150F /* AppleButton.swift */,
 				12F3407D2AA4AFF800EE150F /* EmailButton.swift */,
+				126BFDD92AA4D9BC009B9EEF /* NormalButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -213,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				12F3407B2AA4AF3000EE150F /* ViewSize.swift */,
+				126BFDDD2AA4EA47009B9EEF /* ViewHeight.swift */,
 			);
 			name = Size;
 			sourceTree = "<group>";
@@ -308,12 +328,16 @@
 				12F340662AA4975600EE150F /* Icons.swift in Sources */,
 				12F340712AA4A95B00EE150F /* GoogleButton.swift in Sources */,
 				12F340692AA49EA100EE150F /* FacebookButton.swift in Sources */,
+				126BFDD82AA4D838009B9EEF /* OnboardView.swift in Sources */,
+				126BFDDC2AA4E609009B9EEF /* OnboardModel.swift in Sources */,
+				126BFDDA2AA4D9BC009B9EEF /* NormalButton.swift in Sources */,
 				12F340752AA4AA6E00EE150F /* PagePaddings.swift in Sources */,
 				12F3407E2AA4AFF800EE150F /* EmailButton.swift in Sources */,
 				12F340812AA4B17000EE150F /* FontSizes.swift in Sources */,
 				12F340612AA4928000EE150F /* Images.swift in Sources */,
 				12F3405A2AA48EC300EE150F /* WelcomeView.swift in Sources */,
 				12F340462AA48D3E00EE150F /* SnackOverFlowApp.swift in Sources */,
+				126BFDDE2AA4EA47009B9EEF /* ViewHeight.swift in Sources */,
 				12F340772AA4ABBD00EE150F /* Radius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
