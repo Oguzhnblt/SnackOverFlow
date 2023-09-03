@@ -11,6 +11,7 @@
 		12F340482AA48D3E00EE150F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340472AA48D3E00EE150F /* ContentView.swift */; };
 		12F3404A2AA48D3E00EE150F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F340492AA48D3E00EE150F /* Assets.xcassets */; };
 		12F3404D2AA48D3E00EE150F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F3404C2AA48D3E00EE150F /* Preview Assets.xcassets */; };
+		12F3405A2AA48EC300EE150F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340592AA48EC300EE150F /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		12F340472AA48D3E00EE150F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		12F340492AA48D3E00EE150F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12F3404C2AA48D3E00EE150F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12F340592AA48EC300EE150F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,10 @@
 		12F340442AA48D3E00EE150F /* SnackOverFlow */ = {
 			isa = PBXGroup;
 			children = (
+				12F340572AA48E2200EE150F /* Product */,
+				12F340552AA48DEA00EE150F /* Features */,
+				12F340542AA48DE300EE150F /* Resources */,
+				12F340532AA48DD200EE150F /* Utils */,
 				12F340452AA48D3E00EE150F /* SnackOverFlowApp.swift */,
 				12F340472AA48D3E00EE150F /* ContentView.swift */,
 				12F340492AA48D3E00EE150F /* Assets.xcassets */,
@@ -65,6 +71,51 @@
 				12F3404C2AA48D3E00EE150F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		12F340532AA48DD200EE150F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		12F340542AA48DE300EE150F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		12F340552AA48DEA00EE150F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				12F340562AA48E1400EE150F /* Authentication */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		12F340562AA48E1400EE150F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				12F340582AA48E4300EE150F /* Welcome */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		12F340572AA48E2200EE150F /* Product */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		12F340582AA48E4300EE150F /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				12F340592AA48EC300EE150F /* WelcomeView.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F340482AA48D3E00EE150F /* ContentView.swift in Sources */,
+				12F3405A2AA48EC300EE150F /* WelcomeView.swift in Sources */,
 				12F340462AA48D3E00EE150F /* SnackOverFlowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
