@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125538A12AA91261004D7A46 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 125538A02AA91261004D7A46 /* Alamofire */; };
+		125538A92AA91914004D7A46 /* SnackOverFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125538A82AA91914004D7A46 /* SnackOverFlowTests.swift */; };
 		126BFDD82AA4D838009B9EEF /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDD72AA4D838009B9EEF /* OnboardView.swift */; };
 		126BFDDA2AA4D9BC009B9EEF /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDD92AA4D9BC009B9EEF /* NormalButton.swift */; };
 		126BFDDC2AA4E609009B9EEF /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDDB2AA4E609009B9EEF /* OnboardModel.swift */; };
@@ -38,9 +40,23 @@
 		12F59A8C2AA8E8BA00DAEE5F /* LoginViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A8B2AA8E8BA00DAEE5F /* LoginViewComponents.swift */; };
 		12F59A8E2AA8F0CC00DAEE5F /* OnboardVİewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A8D2AA8F0CC00DAEE5F /* OnboardVİewModel.swift */; };
 		12F59A912AA8F3AE00DAEE5F /* UserCacheItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A902AA8F3AE00DAEE5F /* UserCacheItems.swift */; };
+		12F59A952AA907CC00DAEE5F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A942AA907CC00DAEE5F /* NetworkManager.swift */; };
+		12F59A982AA90EE300DAEE5F /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A972AA90EE300DAEE5F /* UserResponse.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		125538AA2AA91914004D7A46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F3403A2AA48D3D00EE150F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12F340412AA48D3D00EE150F;
+			remoteInfo = SnackOverFlow;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		125538A62AA91914004D7A46 /* SnackOverFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnackOverFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		125538A82AA91914004D7A46 /* SnackOverFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackOverFlowTests.swift; sourceTree = "<group>"; };
 		126BFDD72AA4D838009B9EEF /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		126BFDD92AA4D9BC009B9EEF /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
 		126BFDDB2AA4E609009B9EEF /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
@@ -73,19 +89,37 @@
 		12F59A8B2AA8E8BA00DAEE5F /* LoginViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewComponents.swift; sourceTree = "<group>"; };
 		12F59A8D2AA8F0CC00DAEE5F /* OnboardVİewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardVİewModel.swift"; sourceTree = "<group>"; };
 		12F59A902AA8F3AE00DAEE5F /* UserCacheItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheItems.swift; sourceTree = "<group>"; };
+		12F59A942AA907CC00DAEE5F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		12F59A972AA90EE300DAEE5F /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		12F3403F2AA48D3D00EE150F /* Frameworks */ = {
+		125538A32AA91914004D7A46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		12F3403F2AA48D3D00EE150F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125538A12AA91261004D7A46 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125538A72AA91914004D7A46 /* SnackOverFlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				125538A82AA91914004D7A46 /* SnackOverFlowTests.swift */,
+			);
+			path = SnackOverFlowTests;
+			sourceTree = "<group>";
+		};
 		126BFDD62AA4D825009B9EEF /* Onboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +142,9 @@
 		12F340392AA48D3D00EE150F = {
 			isa = PBXGroup;
 			children = (
+				12F59A922AA907AF00DAEE5F /* Core */,
 				12F340442AA48D3E00EE150F /* SnackOverFlow */,
+				125538A72AA91914004D7A46 /* SnackOverFlowTests */,
 				12F340432AA48D3E00EE150F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				12F340422AA48D3E00EE150F /* SnackOverFlow.app */,
+				125538A62AA91914004D7A46 /* SnackOverFlowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +206,7 @@
 		12F340552AA48DEA00EE150F /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				12F59A962AA90EBF00DAEE5F /* Model */,
 				12F340562AA48E1400EE150F /* Authentication */,
 			);
 			path = Features;
@@ -284,9 +322,51 @@
 			name = Cache;
 			sourceTree = "<group>";
 		};
+		12F59A922AA907AF00DAEE5F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				12F59A932AA907BB00DAEE5F /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		12F59A932AA907BB00DAEE5F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				12F59A942AA907CC00DAEE5F /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		12F59A962AA90EBF00DAEE5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12F59A972AA90EE300DAEE5F /* UserResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		125538A52AA91914004D7A46 /* SnackOverFlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125538AC2AA91914004D7A46 /* Build configuration list for PBXNativeTarget "SnackOverFlowTests" */;
+			buildPhases = (
+				125538A22AA91914004D7A46 /* Sources */,
+				125538A32AA91914004D7A46 /* Frameworks */,
+				125538A42AA91914004D7A46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				125538AB2AA91914004D7A46 /* PBXTargetDependency */,
+			);
+			name = SnackOverFlowTests;
+			productName = SnackOverFlowTests;
+			productReference = 125538A62AA91914004D7A46 /* SnackOverFlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		12F340412AA48D3D00EE150F /* SnackOverFlow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F340502AA48D3E00EE150F /* Build configuration list for PBXNativeTarget "SnackOverFlow" */;
@@ -300,6 +380,9 @@
 			dependencies = (
 			);
 			name = SnackOverFlow;
+			packageProductDependencies = (
+				125538A02AA91261004D7A46 /* Alamofire */,
+			);
 			productName = SnackOverFlow;
 			productReference = 12F340422AA48D3E00EE150F /* SnackOverFlow.app */;
 			productType = "com.apple.product-type.application";
@@ -314,6 +397,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					125538A52AA91914004D7A46 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 12F340412AA48D3D00EE150F;
+					};
 					12F340412AA48D3D00EE150F = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -328,16 +415,27 @@
 				Base,
 			);
 			mainGroup = 12F340392AA48D3D00EE150F;
+			packageReferences = (
+				1255389F2AA91261004D7A46 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 12F340432AA48D3E00EE150F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				12F340412AA48D3D00EE150F /* SnackOverFlow */,
+				125538A52AA91914004D7A46 /* SnackOverFlowTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		125538A42AA91914004D7A46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12F340402AA48D3D00EE150F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,10 +451,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		125538A22AA91914004D7A46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125538A92AA91914004D7A46 /* SnackOverFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12F3403E2AA48D3D00EE150F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F59A952AA907CC00DAEE5F /* NetworkManager.swift in Sources */,
 				12F340832AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift in Sources */,
 				12F340482AA48D3E00EE150F /* ContentView.swift in Sources */,
 				12F340792AA4ACCE00EE150F /* AppleButton.swift in Sources */,
@@ -369,6 +476,7 @@
 				12F340712AA4A95B00EE150F /* GoogleButton.swift in Sources */,
 				12F340692AA49EA100EE150F /* FacebookButton.swift in Sources */,
 				126BFDD82AA4D838009B9EEF /* OnboardView.swift in Sources */,
+				12F59A982AA90EE300DAEE5F /* UserResponse.swift in Sources */,
 				126BFDDC2AA4E609009B9EEF /* OnboardModel.swift in Sources */,
 				126BFDDA2AA4D9BC009B9EEF /* NormalButton.swift in Sources */,
 				12F59A8E2AA8F0CC00DAEE5F /* OnboardVİewModel.swift in Sources */,
@@ -388,7 +496,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		125538AB2AA91914004D7A46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12F340412AA48D3D00EE150F /* SnackOverFlow */;
+			targetProxy = 125538AA2AA91914004D7A46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		125538AD2AA91914004D7A46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K97JL7U478;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oguzhanbolat.SnackOverFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnackOverFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnackOverFlow";
+			};
+			name = Debug;
+		};
+		125538AE2AA91914004D7A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K97JL7U478;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oguzhanbolat.SnackOverFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnackOverFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnackOverFlow";
+			};
+			name = Release;
+		};
 		12F3404E2AA48D3E00EE150F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -564,6 +716,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		125538AC2AA91914004D7A46 /* Build configuration list for PBXNativeTarget "SnackOverFlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125538AD2AA91914004D7A46 /* Debug */,
+				125538AE2AA91914004D7A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		12F3403D2AA48D3D00EE150F /* Build configuration list for PBXProject "SnackOverFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -583,6 +744,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1255389F2AA91261004D7A46 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		125538A02AA91261004D7A46 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1255389F2AA91261004D7A46 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12F3403A2AA48D3D00EE150F /* Project object */;
 }
