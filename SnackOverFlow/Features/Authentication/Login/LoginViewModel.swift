@@ -12,12 +12,14 @@ final class LoginViewModel: ObservableObject {
     @Published var emailValue: String = "eve.holt@reqres.in"
     @Published var passwordValue: String = "cityslicka"
     @Published var token: String = ""
+    @Published var isLogged: Bool = false
     
     let networkManager = NetworkManager(config: NetworkConfig(baseURL: NetworkPath.baseURLRegres))
     
     func onloignUser() async {
         
         token = await onloginUser(email: emailValue, password: passwordValue)
+        isLogged = !token.isEmpty
     }
 }
 
