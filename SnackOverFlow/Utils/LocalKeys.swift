@@ -20,6 +20,17 @@ struct LocalKeys {
     enum Button: String {
         case getStarted = "getStarted"
     }
+    
+    enum Login: String {
+        case welcomeBack = "Welcome Back!"
+        case createAccount = "Create Account"
+        case terms = "By clicking \"Create account\", I agree to SnackOverflow's [TOS](google.com) and [Privacy Policy](google.com)"
+    }
+    
+    enum General: String {
+        case emailHint = "Write your email"
+        case passwordlHint = "Write your password"
+    }
 }
 
 extension String {

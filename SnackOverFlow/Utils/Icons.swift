@@ -14,6 +14,9 @@ struct IconItems {
         case googleLogo = "ic_google_logo"
         case appleLogo = "ic_apple_logo"
         case facebookLogo = "ic_facebook_logo"
+        
     }
-}
-
+    
+        static let mail = "ic_email"
+        static let lock = "ic_lock"
+    }

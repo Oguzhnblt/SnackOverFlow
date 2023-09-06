@@ -10,6 +10,16 @@
 "signInApple"="Sign In with Apple";
 "signupWithEmail"="Sign Up with Email";
 
+// Login
+
+"welcomeBack"="Welcome Back!";
+"createAccount"="Create Account";
+"termsAndCondiiton"="By clicking \"Create account\", I agree to SnackOverflow's [TOS](google.com) and [Privacy Policy](google.com)";
+
 // Button
 
 "getStarted"="Get Started";
+
+// General
+"emailHint"="Write your email";
+"passwordHint"="Write your password";

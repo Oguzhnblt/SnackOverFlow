@@ -11,7 +11,7 @@ import SwiftUI
 struct SnackOverFlowApp: App {
     var body: some Scene {
         WindowGroup {
-            WelcomeView().ignoresSafeArea()
+            LoginView().ignoresSafeArea()
         }
     }
 }

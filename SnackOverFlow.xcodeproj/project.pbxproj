@@ -11,6 +11,7 @@
 		126BFDDA2AA4D9BC009B9EEF /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDD92AA4D9BC009B9EEF /* NormalButton.swift */; };
 		126BFDDC2AA4E609009B9EEF /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDDB2AA4E609009B9EEF /* OnboardModel.swift */; };
 		126BFDDE2AA4EA47009B9EEF /* ViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDDD2AA4EA47009B9EEF /* ViewHeight.swift */; };
+		126BFDE12AA4FBDA009B9EEF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BFDE02AA4FBDA009B9EEF /* LoginView.swift */; };
 		12F340462AA48D3E00EE150F /* SnackOverFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340452AA48D3E00EE150F /* SnackOverFlowApp.swift */; };
 		12F340482AA48D3E00EE150F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340472AA48D3E00EE150F /* ContentView.swift */; };
 		12F3404A2AA48D3E00EE150F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F340492AA48D3E00EE150F /* Assets.xcassets */; };
@@ -33,6 +34,8 @@
 		12F3407E2AA4AFF800EE150F /* EmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F3407D2AA4AFF800EE150F /* EmailButton.swift */; };
 		12F340812AA4B17000EE150F /* FontSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340802AA4B17000EE150F /* FontSizes.swift */; };
 		12F340832AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340822AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift */; };
+		12F59A8A2AA8DCE000DAEE5F /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A892AA8DCE000DAEE5F /* TextFieldModifier.swift */; };
+		12F59A8C2AA8E8BA00DAEE5F /* LoginViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A8B2AA8E8BA00DAEE5F /* LoginViewComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,7 @@
 		126BFDD92AA4D9BC009B9EEF /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
 		126BFDDB2AA4E609009B9EEF /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
 		126BFDDD2AA4EA47009B9EEF /* ViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeight.swift; sourceTree = "<group>"; };
+		126BFDE02AA4FBDA009B9EEF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		12F340422AA48D3E00EE150F /* SnackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F340452AA48D3E00EE150F /* SnackOverFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackOverFlowApp.swift; sourceTree = "<group>"; };
 		12F340472AA48D3E00EE150F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		12F3407D2AA4AFF800EE150F /* EmailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailButton.swift; sourceTree = "<group>"; };
 		12F340802AA4B17000EE150F /* FontSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizes.swift; sourceTree = "<group>"; };
 		12F340822AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DynamicSize+GeometryProxy.swift"; sourceTree = "<group>"; };
+		12F59A892AA8DCE000DAEE5F /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		12F59A8B2AA8E8BA00DAEE5F /* LoginViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,15 @@
 				126BFDDB2AA4E609009B9EEF /* OnboardModel.swift */,
 			);
 			path = Onboard;
+			sourceTree = "<group>";
+		};
+		126BFDDF2AA4FBCD009B9EEF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				126BFDE02AA4FBDA009B9EEF /* LoginView.swift */,
+				12F59A8B2AA8E8BA00DAEE5F /* LoginViewComponents.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		12F340392AA48D3D00EE150F = {
@@ -126,6 +141,7 @@
 		12F340532AA48DD200EE150F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				12F59A882AA8DC6700DAEE5F /* ViewModifiers */,
 				12F3407F2AA4B16300EE150F /* Fonts */,
 				12F3406B2AA4A61300EE150F /* Locale */,
 				12F340622AA496A300EE150F /* Extension */,
@@ -155,6 +171,7 @@
 		12F340562AA48E1400EE150F /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				126BFDDF2AA4FBCD009B9EEF /* Login */,
 				126BFDD62AA4D825009B9EEF /* Onboard */,
 				12F340582AA48E4300EE150F /* Welcome */,
 			);
@@ -245,6 +262,14 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		12F59A882AA8DC6700DAEE5F /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				12F59A892AA8DCE000DAEE5F /* TextFieldModifier.swift */,
+			);
+			name = ViewModifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,6 +351,7 @@
 				12F340642AA496B100EE150F /* Colors.swift in Sources */,
 				12F3407C2AA4AF3000EE150F /* ViewSize.swift in Sources */,
 				12F340662AA4975600EE150F /* Icons.swift in Sources */,
+				126BFDE12AA4FBDA009B9EEF /* LoginView.swift in Sources */,
 				12F340712AA4A95B00EE150F /* GoogleButton.swift in Sources */,
 				12F340692AA49EA100EE150F /* FacebookButton.swift in Sources */,
 				126BFDD82AA4D838009B9EEF /* OnboardView.swift in Sources */,
@@ -334,10 +360,12 @@
 				12F340752AA4AA6E00EE150F /* PagePaddings.swift in Sources */,
 				12F3407E2AA4AFF800EE150F /* EmailButton.swift in Sources */,
 				12F340812AA4B17000EE150F /* FontSizes.swift in Sources */,
+				12F59A8A2AA8DCE000DAEE5F /* TextFieldModifier.swift in Sources */,
 				12F340612AA4928000EE150F /* Images.swift in Sources */,
 				12F3405A2AA48EC300EE150F /* WelcomeView.swift in Sources */,
 				12F340462AA48D3E00EE150F /* SnackOverFlowApp.swift in Sources */,
 				126BFDDE2AA4EA47009B9EEF /* ViewHeight.swift in Sources */,
+				12F59A8C2AA8E8BA00DAEE5F /* LoginViewComponents.swift in Sources */,
 				12F340772AA4ABBD00EE150F /* Radius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
