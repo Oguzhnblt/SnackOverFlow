@@ -38,6 +38,7 @@ struct OnboardView: View {
                         NormalButton(
                             title:LocalKeys.Button.getStarted.rawValue,
                             onTap: {onboardViewModel.saveUserLoginAndRedirect()})
+                        .padding()
                     }
                     
                 }

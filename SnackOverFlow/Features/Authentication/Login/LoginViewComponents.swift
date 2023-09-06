@@ -19,10 +19,11 @@ struct PrivacyTextView: View {
  struct LoginMailView: View {
     let iconName: String
     let hint: String
+    var text: Binding<String>
     var body: some View {
         HStack {
             iconName.image()
-            TextField(hint, text: .constant(""))
+            TextField(hint, text: text)
         }
         .modifier(TextFieldModifier())
     }
@@ -32,11 +33,11 @@ struct LoginPasswordView: View {
     
     let iconName: String
     let hint: String
-    
+    var text: Binding<String>
     var body: some View {
         HStack {
             iconName.image()
-            SecureField(hint, text: .constant(""))
+            SecureField(hint, text: text)
         }
         .modifier(TextFieldModifier())
     }

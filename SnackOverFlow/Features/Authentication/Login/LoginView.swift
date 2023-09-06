@@ -8,20 +8,32 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @ObservedObject private var viewModel = LoginViewModel()
+    
     var body: some View {
         VStack(spacing: PagePadding.All.normal.rawValue) {
             Spacer()
-            
+            Text(viewModel.token)
             ImageItems.Authentication.login.rawValue.image()
             Text(LocalKeys.Login.welcomeBack.rawValue)
                 .foregroundColor(.teflon)
                 .font(.system(size: FontSizes.title1, weight: .semibold))
             
-            LoginMailView(iconName: IconItems.mail, hint: LocalKeys.General.emailHint.rawValue)
-            LoginPasswordView(iconName: IconItems.lock, hint: LocalKeys.General.passwordlHint.rawValue)
+            LoginMailView(iconName: IconItems.mail, hint: LocalKeys.General.emailHint.rawValue, text: $viewModel.emailValue)
+            
+            LoginPasswordView(iconName: IconItems.lock, hint: LocalKeys.General.passwordlHint.rawValue, text: $viewModel.passwordValue)
+            
             Divider()
-            NormalButton(title:LocalKeys.Login.createAccount.rawValue, onTap: {})
+            
+            NormalButton(title:LocalKeys.Login.createAccount.rawValue, onTap: {
+                Task {
+                    await viewModel.onloignUser()
+                }
+            })
+            
             PrivacyTextView()
+            
             Spacer()
         }
         .padding(.all, PagePadding.All.normal.rawValue)
