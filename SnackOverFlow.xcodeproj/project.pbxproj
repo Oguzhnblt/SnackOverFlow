@@ -36,6 +36,8 @@
 		12F340832AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F340822AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift */; };
 		12F59A8A2AA8DCE000DAEE5F /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A892AA8DCE000DAEE5F /* TextFieldModifier.swift */; };
 		12F59A8C2AA8E8BA00DAEE5F /* LoginViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A8B2AA8E8BA00DAEE5F /* LoginViewComponents.swift */; };
+		12F59A8E2AA8F0CC00DAEE5F /* OnboardVİewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A8D2AA8F0CC00DAEE5F /* OnboardVİewModel.swift */; };
+		12F59A912AA8F3AE00DAEE5F /* UserCacheItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F59A902AA8F3AE00DAEE5F /* UserCacheItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		12F340822AA4B5BA00EE150F /* DynamicSize+GeometryProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DynamicSize+GeometryProxy.swift"; sourceTree = "<group>"; };
 		12F59A892AA8DCE000DAEE5F /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		12F59A8B2AA8E8BA00DAEE5F /* LoginViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewComponents.swift; sourceTree = "<group>"; };
+		12F59A8D2AA8F0CC00DAEE5F /* OnboardVİewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardVİewModel.swift"; sourceTree = "<group>"; };
+		12F59A902AA8F3AE00DAEE5F /* UserCacheItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			children = (
 				126BFDD72AA4D838009B9EEF /* OnboardView.swift */,
 				126BFDDB2AA4E609009B9EEF /* OnboardModel.swift */,
+				12F59A8D2AA8F0CC00DAEE5F /* OnboardVİewModel.swift */,
 			);
 			path = Onboard;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 		12F340532AA48DD200EE150F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				12F59A8F2AA8F39900DAEE5F /* Cache */,
 				12F59A882AA8DC6700DAEE5F /* ViewModifiers */,
 				12F3407F2AA4B16300EE150F /* Fonts */,
 				12F3406B2AA4A61300EE150F /* Locale */,
@@ -270,6 +276,14 @@
 			name = ViewModifiers;
 			sourceTree = "<group>";
 		};
+		12F59A8F2AA8F39900DAEE5F /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				12F59A902AA8F3AE00DAEE5F /* UserCacheItems.swift */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,7 +371,9 @@
 				126BFDD82AA4D838009B9EEF /* OnboardView.swift in Sources */,
 				126BFDDC2AA4E609009B9EEF /* OnboardModel.swift in Sources */,
 				126BFDDA2AA4D9BC009B9EEF /* NormalButton.swift in Sources */,
+				12F59A8E2AA8F0CC00DAEE5F /* OnboardVİewModel.swift in Sources */,
 				12F340752AA4AA6E00EE150F /* PagePaddings.swift in Sources */,
+				12F59A912AA8F3AE00DAEE5F /* UserCacheItems.swift in Sources */,
 				12F3407E2AA4AFF800EE150F /* EmailButton.swift in Sources */,
 				12F340812AA4B17000EE150F /* FontSizes.swift in Sources */,
 				12F59A8A2AA8DCE000DAEE5F /* TextFieldModifier.swift in Sources */,

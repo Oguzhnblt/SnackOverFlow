@@ -23,7 +23,7 @@ struct LoginView: View {
             NormalButton(title:LocalKeys.Login.createAccount.rawValue, onTap: {})
             PrivacyTextView()
             Spacer()
-        } 
+        }
         .padding(.all, PagePadding.All.normal.rawValue)
     }
 }

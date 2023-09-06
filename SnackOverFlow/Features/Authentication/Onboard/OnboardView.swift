@@ -9,31 +9,38 @@ import SwiftUI
 
 struct OnboardView: View {
     
-    @State private var currentIndex: Int = 0
-    
+    @StateObject var onboardViewModel = OnboardViewModel()
     private let pageCount = OnboardModel.items.count // Sayfa sayısı
     
     var body: some View {
-        GeometryReader { geometry in
-            VStack {
-                Spacer()
-                TabView(
-                    selection: $currentIndex,
-                    content: {
-                        ForEach(0..<pageCount, id: \.self) { value in
-                            SliderCard(model: OnboardModel.items[value], imageHeight: geometry.dynamicHeight(height: 0.45))
-                        }
-                    })
-                .tabViewStyle(.page(indexDisplayMode: .never))
-                
-                Spacer()
-                HStack {
-                    PageIndicatorView(currentIndex: $currentIndex, pageCount: pageCount)
+        NavigationView  {
+            GeometryReader { geometry in
+                VStack {
+                    Spacer()
+                    TabView(
+                        selection: $onboardViewModel.currentIndex,
+                        content: {
+                            ForEach(0..<pageCount, id: \.self) { value in
+                                SliderCard(model: OnboardModel.items[value], imageHeight: geometry.dynamicHeight(height: 0.45))
+                            }
+                        })
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    
+                    Spacer()
+                    HStack {
+                        PageIndicatorView(currentIndex: $onboardViewModel.currentIndex, pageCount: pageCount)
+                    }
+                    .frame(height: ViewHeight.indicator)
+                    
+                    NavigationLink(isActive: $onboardViewModel.isHomeRedirect) {
+                        WelcomeView().ignoresSafeArea()
+                    } label: {
+                        NormalButton(
+                            title:LocalKeys.Button.getStarted.rawValue,
+                            onTap: {onboardViewModel.saveUserLoginAndRedirect()})
+                    }
+                    
                 }
-                .frame(height: ViewHeight.indicator)
-                
-                NormalButton(title:LocalKeys.Button.getStarted.rawValue, onTap: {})
-                    .padding(.all, PagePadding.All.normal.rawValue)
             }
         }
     }
@@ -84,3 +91,4 @@ struct OnboardView_Previews: PreviewProvider {
         OnboardView()
     }
 }
+
